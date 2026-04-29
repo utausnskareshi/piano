@@ -1,0 +1,39 @@
+# Dependencies and build output
+node_modules/
+dist/
+dev-dist/
+.cache/
+
+# Rust build artifacts
+wasm/target/
+
+# Generated assets (built at CI time, do not commit)
+public/wasm/
+public/icons/icon-192.png
+public/icons/icon-512.png
+public/icons/icon-maskable-512.png
+public/icons/apple-touch-icon.png
+
+# Environment / secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE / editor
+.vscode/
+.idea/
+.claude/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
